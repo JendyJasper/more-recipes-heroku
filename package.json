@@ -1,0 +1,53 @@
+{
+  "name": "more-recipes",
+  "version": "1.0.0",
+  "description": "A simple recipe application",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --watch server --exec babel-node ./bin/www",
+    "start:dev": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "6.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jendyjasper/more-recipes.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "recipes",
+    "heroku"
+  ],
+  "author": "Chijindu Iwuchukwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jendyjasper/more-recipes/issues"
+  },
+  "homepage": "https://github.com/jendyjasper/more-recipes#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.17.2",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "dotenv": "^4.0.0",
+    "eslint": "^4.6.1",
+    "eslint-config": "^0.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "express": "^4.15.4",
+    "express-validator": "^4.1.1",
+    "jsonwebtoken": "^8.0.0",
+    "mocha": "^3.5.0",
+    "morgan": "^1.8.2",
+    "pg": "^7.3.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.8.0"
+  }
+}
