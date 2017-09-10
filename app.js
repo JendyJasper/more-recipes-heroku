@@ -19,8 +19,8 @@ app.get('*', (req, res) => res.status(200).send({
     message: 'Welcome to more recipes.',
   }));
 
-  app.listen(3000, (req, res) => {
-    console.log('App running on port 3000')
-  })
+//  app.listen(5000, (req, res) => {
+//    console.log('App running on port 3000')
+//  })
 
 module.exports = app;
