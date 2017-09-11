@@ -7,6 +7,8 @@ import jwt from 'jsonwebtoken'
 
 const app = express();
 
+const port = process.env.PORT || 5000;
+
 app.use(logger('dev'));
 
 app.use(bodyParser.json());
@@ -14,13 +16,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(validator());
 
-require ('./server/routes')(app);
+// require ('./server/routes')(app);
 app.get('*', (req, res) => res.status(200).send({
     message: 'Welcome to more recipes.',
   }));
 
-//  app.listen(5000, (req, res) => {
-//    console.log('App running on port 3000')
-//  })
+ app.listen(port, (req, res) => {
+   console.log(`App running on port ${port}`)
+ })
 
 module.exports = app;
